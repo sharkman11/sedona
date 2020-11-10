@@ -1,0 +1,156 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main-content__header {
+  position: relative;
+  min-height: 240px;
+  padding-top: 33px;
+  padding-bottom: 29px;
+  box-sizing: border-box;
+
+  &::before {
+    content: url("../img/bg-intro-triangle-mobile.svg");
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 100%;
+  }
+
+  &::after {
+    content: url("../img/bg-triangle.svg");
+    background-color: @color-blue;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.main-content__form-header {
+  position: relative;
+  min-height: 203px;
+  padding-top: 42px;
+  padding-bottom: 18px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e5e5e5;
+
+  &::before {
+    content: url("../img/bg-intro-triangle-mobile.svg");
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.main-content__heading {
+
+  margin: 0;
+  margin-bottom: 25px;
+  padding-right: 30px;
+  padding-left: 30px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.main-content__intro {
+  margin: 1px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 5px;
+
+  &--form {
+    margin-top: 0px;
+    line-height: 24px;
+  }
+}
+
+.main-content__search {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-content__header {
+    min-height: 206px;
+    padding-top: 50px;
+    padding-bottom: 26px;
+    padding-right: 110px;
+    padding-left: 110px;
+
+    &::before {
+      content: url("../img/bg-intro-triangle-tablet.svg");
+      top: -56px;
+    }
+
+    &::after {
+      content: "";
+    }
+  }
+
+  .main-content__intro {
+    &--form {
+      margin-bottom: 35px;
+    padding-right: 13px;
+    padding-left: 13px;
+    }
+  }
+
+  .main-content__form-header {
+    min-height: 206px;
+    padding-top: 68px;
+    padding-bottom: 35px;
+    padding-right: 120px;
+    padding-left: 120px;
+    border-bottom: none;
+
+    &::before {
+      content: url("../img/bg-intro-triangle-tablet.svg");
+      top: -56px;
+    }
+  }
+
+  .main-content__heading {
+    margin-bottom: 30px;
+    font-size: 21px;
+    margin-top: -8px;
+
+    &--form {
+      font-size: 30px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-content__header {
+    padding-top: 62px;
+    padding-right: 310px;
+    padding-left: 310px;
+    padding-bottom: 5px;
+
+    &::before {
+      content: url("../img/bg-intro-triangle-desktop.svg");
+    }
+  }
+
+  .main-content__intro {
+    &--form {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+  }
+
+  .main-content__form-header {
+    padding-top: 120px;
+    padding-right: 310px;
+    padding-left: 310px;
+    padding-bottom: 10px;
+
+    &::before {
+      content: url("../img/bg-intro-triangle-desktop.svg");
+    }
+  }
+}

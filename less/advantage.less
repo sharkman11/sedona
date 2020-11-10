@@ -1,0 +1,251 @@
+.advantage {
+  line-height: 21px;
+}
+
+.advantage--lead {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  color: @color-white;
+  background-color: @color-blue;
+
+  .advantage__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 191px;
+    padding-top: 30px;
+    padding-bottom: 39px;
+    box-sizing: border-box;
+  }
+
+  .advantage__description {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.advantage__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: @base-lineheight;
+}
+
+.advantage__number {
+  margin-top: 8px;
+}
+
+.advantage__description {
+  margin: 0;
+}
+
+.advantage__picture {
+  width: 320px;
+  height: 260px;
+}
+
+.advantage__image {
+  width: 100%;
+  height: 100%;
+}
+
+.advantage--secondary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 168px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 17px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(214, 214, 214);
+  font-weight: 400;
+  color: @color-dark-gray;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .advantage__title {
+    margin-top: 7px;
+    color: @color-main;
+  }
+
+  .advantage__description {
+    margin: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.advantage__title-second {
+  margin-top: 7px;
+  font-size: 18px;
+  line-height: 26px;
+  }
+
+  .advantage__number-second {
+    margin-top: -5px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .advantage--lead {
+    flex-direction: row;
+
+    .advantage__description {
+      padding-right: 0;
+      padding-left: 0;
+      margin-bottom: 5px;
+    }
+  }
+
+  .advantage__title {
+    font-size: 21px;
+    margin-top: 10px;
+  }
+
+  .advantage__title-second{
+    line-height: 26px;
+    font-size: 21px;
+    margin-top: 10px;
+    margin-left: 23px;
+    margin-right: 23px;
+    margin-top: 15px;
+  }
+
+  .advantage__content {
+    width: 256px;
+    min-height: 256px;
+    padding: 30px;
+
+    &--bridge {
+      order: 1;
+    }
+  }
+
+  .advantage__picture {
+    width: 512px;
+    height: 256px;
+  }
+
+  .advantage__image {
+    object-fit: cover;
+  }
+
+  .advantage--secondary {
+    margin: 0;
+    padding: 60px 35px;
+    padding-top: 30px;
+    width: 256px;
+    min-height: 256px;
+    border-bottom: none;
+
+    .advantage__title {
+      font-size: 21px;
+      padding: 0 25px;
+      margin-top: 12px;
+    }
+
+    .advantage__description {
+      margin-bottom: -18px;
+      padding-right: 14px;
+      padding-left: 14px;
+
+      &--area{
+        margin-top: -17px;
+    padding: 19px 1px;
+      }
+
+      &--road{
+        padding: 5px 19px;
+      }
+
+      &--tourists{
+        padding: 5px;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantage--lead {
+    .advantage__content {
+      width: 400px;
+
+      &--city {
+        padding: 60px;
+        padding-top: 40px;
+        padding-bottom: 55px;
+      }
+
+      &--bridge {
+        padding-top: 40px;
+        padding-bottom: 47px;
+        padding-left: 85px;
+        padding-right: 85px;
+      }
+    }
+  }
+
+.advantage__title-second {
+  line-height: 26px;
+  font-size: 21px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 7px;
+}
+
+  .advantage__title {
+    padding: 0 35px;
+
+  }
+
+  .advantage__image {
+    object-fit: cover;
+  }
+
+  .advantage__picture {
+    width: 800px;
+  }
+
+  .advantage--secondary {
+    padding-bottom: 68px;
+    width: 400px;
+
+    .advantage__title {
+      padding: 0 90px;
+    }
+
+    .advantage__description {
+      margin-bottom: -18px;
+      padding-right: 14px;
+      padding-left: 14px;
+
+      &--area{
+        margin-top: -17px;
+        padding: 19px 1px;
+      }
+
+      &--road{
+        padding-top: 0px;
+        padding-right: 35px;
+        padding-bottom: 17px;
+        padding-left: 35px;
+      }
+
+      &--tourists{
+        padding-top: 0px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+      }
+    }
+
+  }
+}
+
+
+

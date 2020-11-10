@@ -1,0 +1,176 @@
+.features__title {
+  margin-top: -5px;
+  margin-bottom: 14px;
+  font-size: 18px;
+}
+
+.features__description {
+  padding-top: 3px;
+  margin: 0;
+  line-height: 21px;
+  font-weight: 400;
+  color: @color-dark-gray;
+  width: 210px;
+}
+
+.features__wrap {
+  margin-left: 12px;
+  padding-right: 40px;
+  margin-bottom: 30px;
+  margin-top: -3px;
+
+  &--house {
+    margin-top: -2px;
+
+  }
+
+  &--souvenirs {
+    margin-top: -17px;
+  }
+
+  &--food {
+    margin-top: -20px;
+    padding-bottom: 13px;
+  }
+}
+
+.features__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-bottom: -7px;
+  padding: 0;
+  padding-top: 26px;
+  padding-left: 20px;
+  min-height: 416px;
+  box-sizing: border-box;
+  text-align: left;
+  list-style: none;
+}
+
+.features__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &--house {
+    padding-top: 18px;
+
+  }
+
+  &--souvenirs {
+    padding-top: 18px;
+  }
+
+  &--food {
+    padding-top: 20px;
+  }
+}
+
+.features__img {
+  fill: @color-blue;
+  margin-top: -49px;
+
+  &--house {
+    margin-top: -30px;
+
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .features__list {
+    flex-direction: row;
+    min-height: 330px;
+    padding: 0;
+    margin-bottom: -13px;
+  }
+
+  .features__item {
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    width: 256px;
+    margin-bottom: 0;
+    padding-top: 57px;
+    padding-bottom: 60px;
+    padding-right: 25px;
+    padding-left: 25px;
+    text-align: center;
+
+    &--souvenirs {
+      order: 2;
+    }
+
+    &--food {
+      .features__description {
+        padding-right: 5px;
+        padding-left: 5px;
+        width: 152px;
+      }
+    }
+
+    &--house {
+      .features__description {
+        padding-right: 10px;
+        padding-left: 10px;
+        width: 167px;
+      }
+    }
+  }
+
+  .features__img {
+    width: 75px;
+    height: 72px;
+    margin-top: 0px;
+  }
+
+  .features__wrap {
+    margin: 0;
+    margin-top: 30px;
+    padding-right: 0;
+  }
+
+  .features__title {
+    font-size: 21px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .features__description {
+    margin: 0;
+    width: 192px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features__img {
+    width: 75px;
+    height: 72px;
+    margin-top: 0px;
+  }
+
+  .features__item {
+    width: 400px;
+    padding-bottom: 83px;
+
+    &--souvenirs {
+      .features__description {
+        padding-right: 65px;
+        padding-left: 65px;
+        width: 196px;
+      }
+    }
+
+    &--food {
+      .features__description {
+        width: 286px;
+      }
+    }
+
+    &--house {
+      .features__description {
+        width: 306px;
+      }
+    }
+  }
+}

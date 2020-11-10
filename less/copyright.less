@@ -1,0 +1,30 @@
+.copyright__text {
+  padding-top: 7px;
+  padding-left: 5px;
+  font-weight: 400;
+}
+
+.copyright__link {
+  padding-top: 10px;
+  padding-right: 5px;
+
+  &:hover .copyright__icon {
+    fill:  #81B3D2;
+    opacity: 0.5;
+  }
+
+  &:active .copyright__icon {
+    fill: #b2b2b2;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__link {
+    padding-right: 0;
+  }
+
+  .copyright__text {
+    padding-left: 12px;
+  }
+}

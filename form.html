@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Academy: Седона</title>
+    <link href="css/styles.min.css" rel="stylesheet">
+  </head>
+  <body class="page-body">
+    <div class="container">
+      <header class="page-header">
+        <nav class="main-nav main-nav--opened">
+          <button class="main-nav__toggle main-nav__toggle--closed" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фото и видео</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="#">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+          <a class="main-nav__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седона">
+            </picture>
+          </a>
+        </nav>
+      </header>
+      <main class="page-main">
+        <h1 class="visually-hidden">Сайт «Седона» – сайт туристического городка в штате Аризона</h1>
+        <section class="preview preview--photo">
+          <img class="preview__image-text" src="img/text-sedona.svg" width="229" height="39" alt="Добро пожаловать в Седону">
+        </section>
+        <div class="main-content">
+          <div class="main-content__form-header">
+            <p class="main-content__heading main-content__heading--form">Оставьте свой отзыв</p>
+            <h2 class="main-content__intro main-content__intro--form intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</h2>
+          </div>
+          <form class="form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="form__item write-name">
+              <legend class="write-name__heading heading">Представьтесь:</legend>
+              <p class="write-name__item">
+                <label class="write-name__label label" for="user-name">Имя*:</label>
+                <input class="write-name__input write-name__input--name required" id="user-name" type="text" name="username" value="Петр" required>
+              </p>
+              <p class="write-name__item">
+                <label class="write-name__label label" for="user-surname">Фамилия*:</label>
+                <input class="write-name__input required" id="user-surname" type="text" name="surname" value="Иванов" required>
+              </p>
+              <p class="write-name__item">
+                <label class="write-name__label label" for="user-patronymic">Отчество:</label>
+                <input class="write-name__input" id="user-patronymic" type="text" name="patronymic" value="Александрович">
+              </p>
+            </fieldset>
+            <div class="form__item write-contacts">
+              <h3 class="write-contacts__heading heading">Контактная&nbsp;информация:</h3>
+              <div class="write-contacts__wrap">
+                <div class="write-contacts__item">
+                  <label class="write-contacts__label label" for="user-phone">
+                    <span class="write-contacts__phone">Контактный</span> телефон*:
+                  </label>
+                  <div class="write-contacts__wrapper">
+                    <input class="write-contacts__input required" id="user-phone" type="tel" name="phone" placeholder="Введите телефон" pattern="[0-9]{1}[0-9]{3}[0-9]{7}" required>
+                    <div class="write-contacts__icon">
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z" fill="#010101"/>
+                        </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="write-contacts__item">
+                  <label class="write-contacts__label label" for="user-email">Электронная почта*:</label>
+                  <div class="write-contacts__wrapper">
+                    <input class="write-contacts__input required" id="user-email" type="email" name="email" placeholder="Введите e-mail" required>
+                    <div class="write-contacts__icon write-contacts__icon--second">
+                      <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z" fill="black"/>
+                        </svg>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <fieldset class="form__item write-opinion">
+              <h3 class="write-opinion__heading heading">Ваше общее впечатление:</h3>
+              <ul class="write-opinion__list">
+                <li class="write-opinion__item">
+                  <input class="write-opinion__input visually-hidden" id="opinion-good" type="radio" name="opinion" value="Скорее положительное" checked>
+                  <label class="write-opinion__label" for="opinion-good">Скорее положительное</label>
+                </li>
+                <li class="write-opinion__item">
+                  <input class="write-opinion__input visually-hidden" id="opinion-bad" type="radio" name="opinion" value="Скорее отрицательное">
+                  <label class="write-opinion__label" for="opinion-bad">Скорее отрицательное</label>
+                </li>
+                <li class="write-opinion__item">
+                  <input class="write-opinion__input visually-hidden" id="opinion-none" type="radio" name="opinion" value="Затрудняюсь ответить">
+                  <label class="write-opinion__label" for="opinion-none">Затрудняюсь ответить</label>
+                </li>
+              </ul>
+            </fieldset>
+            <div class="form__item write-sight">
+              <h3 class="write-sight__heading heading">Посещенные достопримечательности</h3>
+              <ul class="write-sight__list">
+                <li class="write-sight__item write-sight__item--bridge">
+                  <input class="write-sight__input visually-hidden" id="bridge" type="checkbox" name="sight-bridge" checked>
+                  <label class="write-sight__label" for="bridge">Мост Дьявола</label>
+                </li>
+                <li class="write-sight__item write-sight__item--mountain">
+                  <input class="write-sight__input visually-hidden" id="mountain" type="checkbox" name="sight-mountain" checked>
+                  <label class="write-sight__label" for="mountain">Гора-Колокол</label>
+                </li>
+                <li class="write-sight__item write-sight__item--park">
+                  <input class="write-sight__input visually-hidden" id="park" type="checkbox" name="sight-park" checked>
+                  <label class="write-sight__label" for="park">Слайд-парк</label>
+                </li>
+                <li class="write-sight__item write-sight__item--rock">
+                  <input class="write-sight__input visually-hidden" id="rock" type="checkbox" name="sight-rock">
+                  <label class="write-sight__label" for="rock">Красные скалы</label>
+                </li>
+              </ul>
+            </div>
+            <div class="form__item write-comment">
+              <h3 class="write-comment__heading heading">Опишите свои эмоции:</h3>
+              <textarea class="write-comment__textarea form__text form__text--input" id="message" name="message-name" placeholder="Опишите подробно все свои восторги"></textarea>
+              <label class="label" for="message"></label>
+            </div>
+            <button class="form__button button" type="submit" value="Отправить отзыв">Отправить отзыв</button>
+            <p class="form__text">* — обязательные поля</p>
+          </form>
+        </div>
+      </main>
+      <footer class="page-footer page-footer--form">
+        <b class="page-footer__tag">#VisitSedona</b>
+        <ul class="page-footer__list social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--twitter" href="https://twitter.com">
+              <span class="visually-hidden">Мы в twitter</span>
+              <div class="social-list__icon">
+                <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.3 0.166728C13 -0.333272 14.4 0.366728 15 1.26673C15.7 1.06673 16.4 0.766728 17.1 0.566728C17.1 1.36673 16.6 2.06673 16.2 2.26673C16.9 2.46673 17.5 1.76673 17.5 1.76673C17.3 2.76673 16.5 3.46673 15.9 3.76673C15.7 10.3667 12.6 14.7667 5.5 14.5667C5 14.5667 5.6 14.5667 5 14.5667C4.6 14.5667 0.7 14.1667 0 12.7667C2.3 12.9667 4 12.3667 4.8 11.6667C3.8 11.3667 2 11.1667 1.7 8.76673C2.1 8.86673 2.3 8.96673 3 8.86673C1.8 8.06673 0.4 7.36673 0.5 5.16673C0.8 5.46673 1.6 5.66673 1.9 5.66673C1.2 5.46673 -0.1 2.36673 1 0.866728C2.9 2.66673 4.8 4.36673 8.4 4.56673C8.5 2.26673 9.5 0.766728 11.3 0.166728Z" fill="white"/>
+                  </svg>
+                </div>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com">
+              <span class="visually-hidden">Мы в facebook</span>
+              <div class="social-list__icon">
+              <svg width="9" height="19" viewBox="0 0 9 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.3 3.4C7.1 3.4 7.9 3.4 8.7 3.4C8.7 2.3 8.7 1.2 8.7 0C7.7 0 6.8 0 5.8 0C2.7 0.2 1.5 2.4 1.9 6.1H0V9.6H2C2 12.7 2 15.8 2 18.9C3.3 18.9 4.6 18.9 5.8 18.9C5.8 15.8 5.8 12.7 5.8 9.6H8.7V6.1H5.8C5.8 5.1 5.8 3.7 6.3 3.4Z" fill="white"/>
+                </svg>
+                </div>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--youtube" href="https://www.youtube.com">
+              <span class="visually-hidden">Мы в youtube</span>
+              <div class="social-list__icon">
+              <svg  width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.1 0H2.8C1.3 0 0 1.3 0 2.8V11.1C0 12.7 1.3 14 2.8 14H17.1C18.7 14 19.9 12.7 19.9 11.2V2.8C20 1.3 18.7 0 17.1 0ZM7 10.4V3.6L13.8 7L7 10.4Z" fill="white"/>
+                </svg>
+                </div>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link copyright__link--htmlacademy" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт в HTML Academy">
+            <span class="visually-hidden">HTML academy</span>
+            <div class="copyright__link copyright__icon">
+            <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+              </svg>
+              </div>
+          </a>
+        </div>
+      </footer>
+      <section class="popup popup--failure popup--show">
+        <h2 class="popup__heading heading">Что-то пошло не так!</h2>
+        <p class="popup__intro intro">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="popup__button popup__button--failure button" type="button">Ок</button>
+      </section>
+      <section class="popup popup--success popup--show">
+        <h2 class="popup__heading heading">Ваш отзыв отправлен!</h2>
+        <p class="popup__intro popup__intro--success intro">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="popup__button-wrap">
+          <button class="popup__button popup__button--success button" type="button">Закрыть окно</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
