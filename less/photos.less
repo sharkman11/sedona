@@ -1,0 +1,240 @@
+.photos__wrap {
+  position: relative;
+  padding-top: 38px;
+  padding-bottom: 29px;
+  border-bottom: 1px solid #e5e5e5;
+
+  &::before {
+    content: url("../img/bg-intro-triangle-mobile.svg");
+    position: absolute;
+    top: -26px;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.photos__heading {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.photos__intro {
+  margin: 0;
+  padding: 0 20px;
+  line-height: 24px;
+}
+
+.photos__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.photos__item {
+  margin-top: 22px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.photos__link {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.photos__picture {
+  display: block;
+}
+
+.photos__image {
+  width: 100%;
+  height: 100%;
+}
+
+.photos__desc-wrap {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+  padding-bottom: 17px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.photos__desc {
+  margin-bottom: 7px;
+}
+
+.photos__title {
+  margin: 0;
+  margin-bottom: 2px;
+  font-size: @base-fontsize;
+  line-height: 24px;
+}
+
+.photos__author {
+  margin: 0;
+  line-height: 24px;
+  font-weight: 400;
+  color: @color-dark-gray;
+  text-transform: none;
+}
+
+.photos__like {
+  display: flex;
+}
+
+.photos__like-button {
+  width: 23px;
+  height: 21px;
+  fill: #000000;
+  opacity: 0.3;
+}
+
+.photos__like-counter {
+  margin: 0;
+  margin-left: 15px;
+  font-size: @base-fontsize;
+  line-height: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .photos__wrap {
+    padding: 75px 145px;
+    padding-top: 65px;
+    border-bottom: none;
+
+    &::before {
+      content: url("../img/bg-intro-triangle-tablet.svg");
+      top: -56px;
+    }
+  }
+
+  .photos__heading {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+
+  .photos__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 648px;
+  }
+
+  .photos__picture {
+    height: 267px;
+
+    &--lead {
+      height: 400px;
+    }
+  }
+
+  .photos__link {
+    padding: 0;
+  }
+
+  .photos__desc-wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 32px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+
+    &--lead {
+      padding-right: 20px;
+    }
+  }
+
+  .photos__item {
+    margin: 0;
+    width: 50%;
+    border-bottom: none;
+
+    &--lead {
+      width: 100%;
+    }
+  }
+
+  .photos__title {
+    margin: 0;
+  }
+
+  .photos__desc {
+    margin-bottom: 0;
+  }
+
+  .photos__like {
+    align-items: center;
+  }
+
+  .photos__like-button {
+    fill: #000000;
+    opacity: 0.3;
+  }
+
+  .photos__like-counter {
+    margin-left: 12px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos__image {
+    margin-top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+  .photos__wrap {
+    padding-top: 99px;
+    padding-right: 360px;
+    padding-left: 360px;
+    margin-bottom: 5px;
+
+    &::before {
+      content: url("../img/bg-intro-triangle-desktop.svg");
+    }
+  }
+
+  .photos__list {
+    width: 1200px;
+  }
+
+  .photos__item {
+    position: relative;
+    width: 400px;
+    height: 267px;
+
+    &--lead {
+      width: 1200px;
+      height: 400px;
+
+      .photos__desc-wrap {
+        position: absolute;
+        top: 320px;
+        width: 1200px;
+      }
+    }
+  }
+
+  .photos__desc-wrap {
+    position: absolute;
+    bottom: 0;
+    width: 400px;
+    color: @color-white;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .photos__author {
+    color: @color-white;
+  }
+
+  .photos__like-button {
+    fill: #FFFFFF;
+    opacity: 1.0;
+  }
+}

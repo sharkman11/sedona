@@ -1,0 +1,205 @@
+.write-opinion {
+    margin: 0;
+    padding: 0;
+  }
+
+  .write-opinion__heading {
+    margin: 0;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    text-align: left;
+  }
+
+  .write-opinion__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    list-style: none;
+  }
+
+  .write-opinion__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+    height: 55px;
+    box-sizing: border-box;
+
+    &:last-child {
+      margin-bottom: 27px;
+    }
+  }
+
+  .write-opinion__label {
+    padding-left: 77px;
+    text-align: start;
+    font-size: 18px;
+    line-height: @base-lineheight;
+    font-weight: @base-fontweight;
+    text-transform: none;
+  }
+
+  .write-opinion__input:checked + .write-opinion__label {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 55px;
+      height: 55px;
+
+      border-radius: 50%;
+      background-color: #f2f2f2;
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 17px;
+      left: 17px;
+
+      width: 22px;
+      height: 22px;
+
+      border-radius: 50%;
+      background-color: @color-dark-gray;
+    }
+  }
+
+  .write-opinion__input:checked:hover + .write-opinion__label {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 55px;
+      height: 55px;
+
+      border-radius: 50%;
+      background-color: #e5e5e5;
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 17px;
+      left: 17px;
+
+      width: 22px;
+      height: 22px;
+
+      border-radius: 50%;
+      background-color: @color-dark-gray;
+    }
+  }
+
+  .write-opinion__input:checked:active + .write-opinion__label {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 55px;
+      height: 55px;
+
+      border-radius: 50%;
+      background-color: #d5d5d5;
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 17px;
+      left: 17px;
+
+      width: 22px;
+      height: 22px;
+
+      opacity: 0.3;
+      border-radius: 50%;
+      background-color: @color-dark-gray;
+    }
+  }
+
+  .write-opinion__input:not(:checked) + .write-opinion__label {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 55px;
+      height: 55px;
+
+      border-radius: 50%;
+      background-color: #f2f2f2;
+    }
+  }
+
+  .write-opinion__input:not(:checked):hover + .write-opinion__label {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 55px;
+      height: 55px;
+
+      border-radius: 50%;
+      background-color: #e5e5e5;
+    }
+  }
+
+  .write-opinion__input:not(:checked):active + .write-opinion__label {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 55px;
+      height: 55px;
+
+      border-radius: 50%;
+      background-color: #d5d5d5;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    .write-opinion__list {
+      padding: 0;
+    }
+
+    .write-opinion__heading {
+      padding-bottom: 60px;
+      padding-left: 0;
+      font-size: 21px;
+      text-align: left;
+    }
+
+    .write-opinion__item {
+      margin-bottom: 22px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .write-opinion__heading {
+      padding-left: 77px;
+    }
+  }

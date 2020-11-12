@@ -1,0 +1,19 @@
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  background-color: @color-white;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 1200px;
+  }
+}
